@@ -1,11 +1,7 @@
-/**
- * Created with IntelliJ IDEA.
- * User: vishnun
- * Date: 8/8/12
- * Time: 10:23 AM
- * To change this template use File | Settings | File Templates.
- */
+import java.util.Random;
+
 public class Calculator {
+
     public double addition(double amount1, double amount2) {
         return amount1+amount2;
     }
@@ -28,5 +24,17 @@ public class Calculator {
             total-=amount;
         }
         return total;
+    }
+
+    public double multiply(Integer quantity, double cost) {
+        if( quantity<0 || cost<0) return 0.0;
+        return quantity *  cost ;
+    }
+
+    public Boolean multiplyByRandom(double amount) {
+        Random random = new Random();
+        double randomNumber=random.nextDouble();
+        double result = amount*randomNumber ;
+        return true;
     }
 }

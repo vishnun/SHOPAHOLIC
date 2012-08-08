@@ -37,4 +37,28 @@ public class CalculatorTest{
         double result = calculator.subtraction(10, 3, 6);
         Assert.assertEquals(1.0, result);
     }
+
+    @Test
+    public void shouldMultiplyTwoNumbers(){
+        Calculator calculator=new Calculator();
+        Integer quantity=5;
+        double cost=100;
+        double result=calculator.multiply(quantity,cost);
+        Assert.assertEquals(500.0,result);
+    }
+    @Test
+    public void shouldReturnZeroForInvalidInputs(){
+        Calculator calculator=new Calculator();
+        Integer quantity=-2;
+        double cost=-1;
+        double result=calculator.multiply(quantity,cost);
+        Assert.assertEquals(0.0,result);
+    }
+
+    @Test
+    public void shouldMultiplyByRandomNumber(){
+        Calculator calculator=new Calculator();
+        Boolean success=calculator.multiplyByRandom(5);
+        Assert.assertTrue(success);
+    }
 }
