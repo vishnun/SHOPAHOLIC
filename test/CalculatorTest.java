@@ -1,5 +1,6 @@
 import junit.framework.Assert;
 import org.junit.Test;
+import twu.shopaholic.Calculator;
 
 public class CalculatorTest{
 
