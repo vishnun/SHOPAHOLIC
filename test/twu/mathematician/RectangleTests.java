@@ -3,6 +3,8 @@ package twu.mathematician;
 import org.junit.Assert;
 import org.junit.Test;
 
+//Job: Tests the behaviour of Rectangle
+
 public class RectangleTests {
 
     @Test
@@ -39,8 +41,5 @@ public class RectangleTests {
         Rectangle square=Rectangle.square(5);
         Assert.assertTrue(square.isSquare());
     }
-    @Test
-    public void shouldCalculateArea(){
 
-    }
 }

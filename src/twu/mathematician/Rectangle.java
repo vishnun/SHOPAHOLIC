@@ -1,5 +1,8 @@
 package twu.mathematician;
 
+//Job: Understands the shape with four straight sides
+//     with 90 degree corners geometrically
+
 public class Rectangle {
 
     private int length, width;
@@ -35,5 +38,18 @@ public class Rectangle {
 
     public boolean isSquare() {
         return this.length==this.width;
+    }
+
+    public String drawWithAsterisks() {
+        StringBuffer drawing=new StringBuffer();
+        for(int i=0;i<width;i++)
+        {
+            for (int j=0;j<length;j++)
+            {
+                drawing.append("*");
+            }
+            drawing.append("\n");
+        }
+        return drawing.toString();
     }
 }
